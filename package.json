@@ -1,0 +1,28 @@
+{
+  "name": "roblox-mcp",
+  "version": "1.0.0",
+  "description": "Roblox Studio <-> Claude Code MCP integration. Stream live game events and drive the game from Claude.",
+  "type": "module",
+  "bin": {
+    "roblox-mcp": "dist/index.js"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsc --watch",
+    "setup": "node scripts/setup.mjs",
+    "uninstall": "node scripts/setup.mjs --uninstall"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "typescript": "^5.5.0"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
